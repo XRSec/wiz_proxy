@@ -99,4 +99,8 @@ echo "###### wiz start ######"
 docker start wiz >> /wiz/logs/$backup_data.log
 ```
 
-
+```bash
+crontab -e
+30 02 * * * bash /wiz/wiz_bac.sh
+crontab -l
+```
